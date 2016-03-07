@@ -1,0 +1,16 @@
+
+.sidebar{
+	height: 400px;
+	width: 100%;
+	background-color: #A4DAD3;
+}
+.main{
+	width: 100%;
+	background-color: #DCE7B1;
+}
+.imgContainer{
+	padding-top: 20px;
+}
+.nav{
+	display: none;
+}

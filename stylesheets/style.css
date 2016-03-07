@@ -1,0 +1,83 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+body {
+  	font-family: "STXihei", Arial,Microsoft YaHei , Helvetica;
+  	font-size: 14px;
+  	line-height: 1.428571429;
+  	color: #777777;
+  	background-color: #ffffff;
+	background-image: url(../images/sidebar.jpg);
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+}
+a{
+	text-decoration:none;
+}
+a:hover,a:focus {
+  	color: #2a6496;
+}
+a:focus {
+  	outline: thin dotted #333;
+  	outline: 5px auto -webkit-focus-ring-color;
+  	outline-offset: -2px;
+}
+h1{
+	font-size:50px;
+}
+p{
+	font-size:15px;
+	line-height:30px;
+}
+
+.container{
+	min-width: 1024px;
+	max-width:1440px;
+	margin-left: auto;
+	margin-right: auto;
+	border:solid 2px black;
+}
+
+.img-responsive {
+  	display: inline-block;
+  	height: auto;
+  	max-width: 100%;
+  	border:2px solid white;
+	border-radius:60px;
+	-moz-border-radius:60px; /* Old Firefox */
+}
+.imgContainer{
+	height: 120px;
+	width: 120px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.banner{
+	height: 200px;
+	border:solid 3px white;
+}
+.bannerPicture{
+	width: 200px;
+	display: inline;
+	vertical-align:text-top;
+	float: right;
+}
+
+.content{
+	margin-left:40px;
+	margin-right: 40px;
+	min-height: 500px;
+	width: 75%;
+	border-top:solid 1px #aaaaaa;
+}
+.main #skillContent h2{
+	margin-top: 20px;
+}
+.main #skillContent .webSkill{
+	border-bottom:solid 1px #aaaaaa;
+	width:600px;
+	margin:0 auto;
+	padding-bottom: 30px;
+}
