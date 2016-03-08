@@ -18,10 +18,8 @@ $(document).ready(function(){
 
 	}
 	$(function(){
-		$('.nav ul li a').mouseover(function(){
+		$('.nav ul li a').click(function(){
 			var screenHeight=document.getElementById(String(this.id)+"Content").offsetTop;
-			if(this.id=="introduction")
-				screenHeight=80;
 			scrolling(screenHeight-80);
 			return false;
 		})
@@ -29,18 +27,18 @@ $(document).ready(function(){
 
 
 
-	window.onresize=function(){
-		if (window.innerWidth){
-			winWidth = window.innerWidth;
-			winHeight = window.innerHeight ;
-			document.getElementById("message").innerHTML=winWidth+","+winHeight;
-		}
-		else if ((document.body) && (document.body.clientWidth)){
-			winWidth = document.body.clientWidth;
-			winHeight = document.body.clientHeight;
-			document.getElementById("message").innerHTML=winWidth+","+winHeight;
-		}
-	}
+	// window.onresize=function(){
+	// 	if (window.innerWidth){
+	// 		winWidth = window.innerWidth;
+	// 		winHeight = window.innerHeight ;
+	// 		document.getElementById("message").innerHTML=winWidth+","+winHeight;
+	// 	}
+	// 	else if ((document.body) && (document.body.clientWidth)){
+	// 		winWidth = document.body.clientWidth;
+	// 		winHeight = document.body.clientHeight;
+	// 		document.getElementById("message").innerHTML=winWidth+","+winHeight;
+	// 	}
+	// }
 	window.onscroll=function(){
 		var scrollTop=0;
 		if(document.documentElement&&document.documentElement.scrollTop){
