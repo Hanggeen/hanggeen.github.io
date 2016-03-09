@@ -191,6 +191,14 @@ p{
 .main #skillContent h2{
 	margin-top: 20px;
 }
+
+.web-skill{
+	border-bottom: 1px solid #aaaaaa;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	width: 700px;
+}
+
 .skill-container-1{
 	width:600px;
 	/*border: solid 1px black;*/
@@ -276,3 +284,49 @@ p{
       -webkit-transform:translateX(0px) translateY(0px) scale(1) rotate(360deg);
 }*/
 /**/
+
+
+/*以下是圆形进度条的实现*/
+.soft-skill{
+	padding-top:100px;
+	width: 680px;
+	height: 400px;
+	/*background-color: #111111;*/
+}
+.soft-container{
+	width: 150px;
+	height: 400px;
+	/*background-color: #999999;*/
+	margin-right: 15px;
+	display: inline-block;
+}
+.soft-progress{
+	width: 150px;
+	height: 150px;
+	/*background-color: #bbbbbb;*/
+	border-radius:50%;
+	-moz-border-radius:50%;
+	position: relative;
+}
+.soft-progress img{
+	position: absolute;
+	left: 50%;
+	margin-left: -32px;
+	top: 50%;
+	margin-top:-35px;
+}
+.soft-container h2{
+	text-align: center;
+}
+.psBg{
+	background-color: #28273b;
+}
+.aiBg{
+	background-color: #5d4327;
+}
+.pptBg{
+	background-color: #eaeaea;
+}
+.wordBg{
+	background-color: #eaeaea;
+}
