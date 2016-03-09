@@ -1,9 +1,10 @@
 $(document).ready(function(){
 	var winWidth;
 	var soft = true;
+	var scrollTimer;//这个必须是全局变量，因为每次点击的时候都可能出现上一次的timer还没有结束，
 	function scrolling(screenHeight){
-		clearInterval(timer);
-		timer = setInterval(function(){
+		clearInterval(scrollTimer);
+		scrollTimer = setInterval(function(){
 		var osTop= document.documentElement.scrollTop || document.body.scrollTop;
 		var ispeed=Math.floor(-(osTop-screenHeight)/8);
 		if (osTop-screenHeight<8 && osTop-screenHeight>0)
@@ -12,7 +13,7 @@ $(document).ready(function(){
 			ispeed=1;
 		document.documentElement.scrollTop = document.body.scrollTop = osTop + ispeed;
 		if(osTop == screenHeight){
-			clearInterval(timer);
+			clearInterval(scrollTimer);
 		}
 		},10);
 
@@ -49,6 +50,7 @@ $(document).ready(function(){
 		}
 		document.body.style.backgroundPosition="0px "+-scrollTop*0.1+"px";
 
+		//当滚动到圆形进度条的时候自动填满
 		if (((document.getElementById("soft").offsetTop-document.body.scrollTop)<500)&&(soft)){
 			loadProgress(90,"ps","#7ecef4");
     			loadProgress(70,"ai","#f5ae4a");
