@@ -197,6 +197,9 @@ p{
 	padding-top: 50px;
 	padding-bottom: 50px;
 	width: 700px;
+	background-image: url(../images/skill.png) ;
+    background-repeat:no-repeat;
+	background-size:100%;padding-top:460px;
 }
 
 .skill-container-1{
@@ -329,4 +332,33 @@ p{
 }
 .wordBg{
 	background-color: #eaeaea;
+}
+
+
+
+
+/*以下是work内容*/
+.workContainer{
+	margin-top: 70px;
+	width: 650px;
+}
+.wordColumn{
+	display: inline-block;
+	vertical-align:top;
+	width:200px;
+	margin-right: 10px;
+}
+.wordColumn img {
+  	display: inline-block;
+  	height: auto;
+  	max-width: 100%;
+}
+.box{
+	margin-bottom: 20px;
+	padding: 12px 8px 20px 8px;
+       /*box-shadow:-5px -5px 8px black;*/
+	background-color: #edf3f8;
+}
+.box span{
+	color: #a8a8a8;
 }
