@@ -177,7 +177,7 @@ body {
    margin:0 auto;
 }
 .col-4-form form select :active{
-   	border: 1px solid #be4e48;
+   	border: 1px solid #e74f4d;
 }
 .col-4-form form select {
    width: 268px;
@@ -198,13 +198,128 @@ body {
 	height: 33px;
 	color: white;
 	font-size:14px;
-	background-color: #be4e48;
-   	border: 0px solid #be4e48;
+	background-color: #e74f4d;
+   	border: 0px solid #e74f4d;
+}
+
+/*以下是栏目五的内容*/
+#column-5{
+	width: 100%;
+	height: 600px;
+	background-color: #f7f7f7;
+}
+.center{
+	width: 1054px;
+	margin: 0 auto;
+}
+.col-5{
+	display: inline-block;
+	width: 220px;
+	height: auto;
+	margin:100px 20px 0px 20px;
+}
+.col-5-img{
+	width: 200px;
+	height: auto;
+	padding:10px 10px 10px 10px;
+	background-color: white;
+	border:1px solid #dcd9d7;
+}
+.col-5-text{
+	width: 200px;
+	height: 50px;
+	margin:5px 0px 5px 0px;
+	text-align: center;
+}
+.col-5-big h2{
+	margin-left: 5px;
+	letter-spacing:20px;
 }
 
 
 
+/*以下是栏目六的内容*/
+#column-6{
+	width: 100%;
+	height: auto;
+    	word-spacing: -4px;/*对抗display:inline-block的间距问题*/
+	height: 567px;
+}
+.col-6-1{
+	display: inline-block;
+	width: 850px;
+}
+.col-6-center{
+	width: 1280px;
+	margin:0 auto;
+}
+.col-6-2{
+	display: inline-block;
+	width:430px;
+	height: 567px;
+	vertical-align: top;
+}
+.col-6-2 h3{
+	text-align: center;
+	margin-bottom: 10px;
+}
+.col-6-2 h3,p{
+	line-height:2;
+}
+.col-6-2 h3 span{
+	color:#e74f4d;
+}
+.col-6-2-bottom{
+	width: 300px;
+	margin:100px auto 0px auto;
+}
+.col-6-2-button{
+	width: 72px;
+	height: 30px;
+	padding:5px 18px 0px 18px;
+	margin:10px auto 0px auto;
+	color:#e74f4d;
+	border: 1px solid #e74f4d;
+}
 
+
+/*以下是栏目七的内容*/
+#column-7{
+	width: 100%;
+	height: 521px;
+	background-color: #f7f7f7;
+    	word-spacing: -4px;/*对抗display:inline-block的间距问题*/
+}
+.col-7{
+	display: inline-block;
+	width: 425px;
+	height: 521px;
+    	vertical-align: top;
+}
+.col-7-1{
+	background-color: #e74f4d;
+	color: white;
+}
+.col-7-2{
+	background-color: white;
+	color: #e74f4d;
+}
+.col-7-text{
+	width: 170px;
+	height: auto;
+	margin:170px auto 0px auto;
+	text-align: center;
+}
+.col-7-button{
+	width: 140px;
+	padding:15px;
+	margin-top:35px;
+	text-align: center;
+	border:1px solid white;
+}
+.col-7-2 .col-7-button{
+	border:1px solid #e74f4d;
+}
 
 
 
