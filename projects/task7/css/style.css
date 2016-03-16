@@ -1,3 +1,15 @@
+/*欢迎大家多多指出不足，感谢您的支持*/
+
+
+
+
+
+
+/******************************************************************************
+
+下面是全局样式，由于时间比较短，所以没有做很详细的规划
+
+******************************************************************************/
 *{
 	margin:0px;
 	padding: 0px;
@@ -31,14 +43,11 @@ a{
 	display: inline-block;
 	margin:0px 100px;
 	font-size: 18px;
-	vertical-align:top;
+	vertical-align:top;/*用于把web-name元素行内顶部对齐*/
 }
-/*#web-name b::before{
-	content:url(../images/min-icon-books.png);
-}*/
 #web-name span{
 	font-size:24px;
-	vertical-align:top;
+	vertical-align:20%;/*用于把新世界这几个字和logo对齐*/
 }
 #nav-container{
 	display: inline-block;
@@ -77,6 +86,8 @@ a{
 	height: 700px;
 	background:url(../images/banner.jpg);
 }
+/*从设计图得到的背景图片是偏亮的，设计师用一个黑色背景+0.2透明度变暗以突显文字亮度。
+因此这里用了两个div（background-img和text-box），下面的div是放背景图片，上面的div是放文字和黑色背景*/
 #text-box{
 	position: absolute;
 	z-index: 1;
@@ -84,7 +95,7 @@ a{
 	height: 475px;
 	padding:225px 0px 0px 115px;
 	color: white;
-  	background:rgba(0,0,0,0.2);
+  	background:rgba(0,0,0,0.2);/*定义背景颜色为黑色，透明度为0.2*/
 }
 #text-box h1,p{
 	margin-bottom: 20px;
@@ -93,13 +104,14 @@ a{
 	font-size: 50px;
 }
 #start{
-	width: 120px;
-	height: 45px;
-	padding:10px 100px;
+	width: 320px;
+	height: 70px;
+	padding:10px 40px;
 	margin-top: 100px;
 	color: white;
 	font-size: 30px;
 	background-color:  #e74f4d;
+	border-width: 0px;
 }
 
 
@@ -131,10 +143,27 @@ a{
 #icon-4{
 	background:url(../images/icon-square.png);
 }
+#icon-1:hover,#icon-2:hover,#icon-3:hover,#icon-4:hover{
+	transform:rotate(360deg);
+	-webkit-transform:rotate(360eg); 
+	-moz-transform:rotate(360eg); 
+	-ms-transform:rotate(360eg); 
+	-o-transform:rotate(360eg); 
+}
 .icon{
 	width: 40px;
 	height: 40px;
 	margin:40px auto;
+	transform:rotate(-360deg);
+	-webkit-transform:rotate(-360deg); 
+	-moz-transform:rotate(-360deg); 
+	-ms-transform:rotate(-360deg); 
+	-o-transform:rotate(-360deg); 
+
+  	transition:transform 0.5s ease;
+	-webkit-transition:transform 0.5s ease;
+  	-moz-transition:transform 0.5s ease;
+	-o-transition:transform 0.5s ease;
 }
 .text{
 	width: 180px;
@@ -149,6 +178,7 @@ a{
 /*以下是第三块内容的样式*/
 #column-3{
 	width: 100%;
+	min-width: 1280px;
 	height: 260px;
 	padding-top:100px;
 	background-color: #ededec;
@@ -224,6 +254,7 @@ a{
 /*以下是栏目五的内容*/
 #column-5{
 	width: 100%;
+	min-width: 1280px;
 	height: 600px;
 	background-color: #f7f7f7;
 }
@@ -233,6 +264,8 @@ a{
 }
 .col-5{
 	display: inline-block;
+
+
 	vertical-align: top;
 	width: 220px;
 	height: auto;
@@ -347,6 +380,7 @@ a{
 /*以下是栏目七的内容*/
 #column-7{
 	width: 100%;
+	min-width: 1280px;
 	height: 521px;
 	background-color: #f7f7f7;
     	word-spacing: -4px;/*对抗display:inline-block的间距问题*/
@@ -421,6 +455,7 @@ a{
 	display: block;
 	margin-top:-20px;
 	margin-bottom: 30px;
+	font-size: 13px;
 	text-align: right;
 }
 .col-8-form{
@@ -453,6 +488,7 @@ a{
 /*以下是栏目九的内容*/
 #column-9{
 	width: 100%;
+	min-width: 1280px;
 	color:white;
 	background-color: #32353e;
 }
@@ -481,9 +517,14 @@ a{
 	background-color: #686166;
 	border:0px;
 }
+.col-9-button:hover{
+	color: white;
+	background-color: #e74f4d;
+}
 /*foot*/
 #foot{
 	width: 100%;
+	min-width: 1280px;/*如果宽度上面宽度为100%，这里记得设置最小宽度。上面的100%是根据浏览器而定，和上面固定宽度出现不同宽度，会留白*/
 	height: 60px;
 	padding-top:30px;
 	color: white;
