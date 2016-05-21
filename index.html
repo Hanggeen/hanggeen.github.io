@@ -2,225 +2,42 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="stylesheets/style.css" type="text/css" />
-	<link rel="stylesheet" media="screen and (max-width: 1024px)" href="stylesheets/small.css" />
-	<link rel="stylesheet" media="screen and (min-width: 1024px)" href="stylesheets/normal.css" />
-	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1.0,maximum-scale=1.0,user-scalable=n">
+	<link rel="shortcut icon" href="images/favicon3.ico" />
+	<link rel="stylesheet" href="css/common.css" type="text/css" />
+	<link rel="stylesheet" media="(max-width: 1023px)" href="css/mobile.css" type="text/css" />
+	<link rel="stylesheet" media="(min-width: 1024px)" href="css/style.css" type="text/css" />
+	<title>与你常在</title>
 </head>
 <body>
-	<div class="container">
-		<div class="sidebar">
-			<div class="imgContainer">
-				<img src="images/head.jpg" alt="" class="img-responsive">
-			</div>
-			<div class="name">
-				<h2></h2>
-			</div>
-			<div class="nav">
-				<ul>
-					<li><a href=""  id="introduction">自我介绍 | Introduction</a></li>
-					<li><a href=""  id="skill">专业技能 | Skill</a></li>
-					<li><a href=""  id="practices">学业实践 | Experiences</a></li>
-					<li><a href=""  id="work">个人作品 | Works</a></li>
-					<li><a href=""  id="awards">获奖情况 | Awards</a></li>
-					<li><a href=""  id="message">个人信息 | Message</a></li>
-				</ul>
-			</div>
-			<div class="footer">
-				Wechat <span class="wechat"></span>
-			</div>
+	<div id="container">
+		<nav>
+			<ul>
+				<li><a href="#home">首页 · Hanggeen</a></li>
+				<li><a href="#list">文章 · Article</a></li>
+				<li><a href="#album">相册 · Album</a></li>
+				<li><a href="#works">作品 · Works</a></li>
+				<li><a href="#this">本站 · Ab This</a></li>
+			</ul>
+			<div class="clear"></div>
+		</nav>
+		<div id="content">
 		</div>
-		<div class="main">
-			<div class="firstContent"></div>
-			<div id="introductionContent" class="content">
-				<h1>Introduction</h1>
-				<div class="labelWall">
-					<div class="label label-1">酷爱Marvel</div>
-					<div class="label label-2">户外运动爱好者</div>
-					<div class="label label-3">爱摄影</div>
-					<div class="label label-4">电影发烧友</div>
-					<div class="label label-5">篮球·科比</div>
-					<div class="label label-6">Music·陈奕迅</div>
-					<div class="label label-7">Beyond</div>
-				</div>
-				<div class="picture">
-					<img src="images/banner.jpg" alt="" class="bannerPicture">
-				</div>
-				<div class="introduces">
-					<p>酷爱漫威，电影迷，喜欢摄影，旅游；</p>
-					<p>篮球，足球，乒乓羽毛，无一不好</p>
-					<p>热爱学习新技术！热衷前端开发！</p>
-					<p>酷爱漫威，电影迷，喜欢摄影，旅游；</p>
-					<p>篮球，足球，乒乓羽毛，无一不好</p>
-					<p>热爱学习新技术！热衷前端开发！</p>
-				</div>
-			</div>
-			<div id="skillContent" class="content">
-				<h1>Skill</h1>
-				<div class="web-skill">
-					<div class="strength">
-						<ul>
-							<li>了解</li>
-							<li>入门</li>
-							<li>掌握</li>
-							<li>熟悉</li>
-						</ul>
-					</div>
-					<div class="skill-container-1">
-						<div class="skill-menu">
-							<ul>
-								<li>HTML5</li>
-								<li>CSS3</li>
-								<li>JavaScript</li>
-								<li>jQuery</li>
-								<li>Bootstrap</li>
-								<li>Node.js</li>
-								<li>React</li>
-							</ul>
-						</div>
-						<div class="progress-container">
-							<div class="progress">
-								<span></span><span></span><span></span><span></span>
-							</div>
-							<div class="progress">
-								<span></span><span></span><span></span><span></span>
-							</div>
-							<div class="progress">
-								<span></span><span></span><span></span><span></span>
-							</div>
-							<div class="progress">
-								<span></span><span></span><span></span>
-							</div>
-							<div class="progress">
-								<span></span><span></span><span></span>
-							</div>
-							<div class="progress">
-								<span></span><span></span>
-							</div>
-							<div class="progress">
-								<span></span><span></span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="soft" class="soft-skill">
-					<div class="soft-container">
-						<div class="soft-progress psBg">
-							<img src="images/ps.png" alt="">
-							<canvas id="ps" width="150px" height="150px"></canvas>
-						</div>
-						<h2>Photoshop</h2>
-					</div>
-					<div class="soft-container">
-						<div class="soft-progress aiBg">
-							<img src="images/ai.png" alt="">
-							<canvas id="ai" width="150px" height="150px"></canvas>
-						</div>
-						<h2>AI</h2>
-					</div>
-					<div class="soft-container">
-						<div class="soft-progress pptBg">
-							<img src="images/ppt.png" alt="">
-							<canvas id="ppt" width="150px" height="150px"></canvas>
-						</div>
-						<h2>PowerPoint</h2>
-					</div>
-					<div class="soft-container">
-						<div class="soft-progress wordBg">
-							<img src="images/word.png" alt="">
-							<canvas id="word" width="150px" height="150px"></canvas>
-						</div>
-						<h2>Word</h2>
-					</div>
-				</div>
-			</div>
-			<div id="practicesContent" class="content">
-				<h1>Experiences</h1>
-			</div>
-			<div id="workContent" class="content">
-				<h1>Works</h1>
-				<div class="workContainer">
-					<div class="wordColumn">
-						<div class="box">
-							<img src="images/8.png" alt="">
-							<h4>个人博客</h4>
-							<p><span>简介：</span>用html5+css3+原生JavaScript技术搭建的个人博客</p>
-						</div>
-						<div class="box">
-							<img src="images/12.png" alt="">
-							<h4>项目内容表单</h4>
-							<p><span>简介：</span>为客户而设计的表单，使用html5表单属性</p>
-						</div>
-						<div class="box">
-							<img src="images/3.jpg" alt="">
-							<h4>新老生交流会传单</h4>
-							<p><span>简介：</span>院学活动之一，让大四学生给大一学生解问答疑</p>
-						</div>
-						<div class="box">
-							<img src="images/4.jpg" alt="">
-							<h4>毕业晚会海报</h4>
-							<p><span>简介：</span>为学院毕业学子准备的晚会，以及晚会海报</p>
-						</div>
-					</div>
-					<div class="wordColumn">
-						<div class="box">
-							<img src="images/9.png" alt="">
-							<h4>学习系统网站首页</h4>
-							<p><span>简介：</span>为广工学子打造一个智能化的学习平台，同时首页给出学习内容大纲和系统算法模块</p>
-						</div>
-						<div class="box">
-							<img src="images/11.png" alt="">
-							<h4>项目列表</h4>
-							<p><span>简介：</span>客户可根据图表来识别当前项目的类型和进度</p>
-						</div>
-						<div class="box">
-							<img src="images/6.jpg" alt="">
-							<h4>活动邀请函</h4>
-							<p><span>简介：</span>为学院活动邀请重要嘉宾而用</p>
-						</div>
-					</div>
-					<div class="wordColumn">
-						<div class="box">
-							<img src="images/10.png" alt="">
-							<h4>学习系统下拉菜单</h4>
-							<p><span>简介：</span>系统课程内容安排的列表，在副导航可切换学习内容</p>
-						</div>
-						<div class="box">
-							<img src="images/13.png" alt="">
-							<h4>网站登录弹窗</h4>
-							<p><span>简介：</span>背景内容渐暗以突出弹框内容，简洁大方</p>
-						</div>
-						<div class="box">
-							<img src="images/1.jpg" alt="">
-							<h4>院学迎新手册</h4>
-							<p><span>简介：</span>专门为学院学生打造的介绍手册，介绍学生会大小相关活动</p>
-						</div>
-						<div class="box">
-							<img src="images/2.jpg" alt="">
-							<h4>迎新海报</h4>
-							<p><span>简介：</span>欢迎新一届新同学来到广工而特制的海报</p>
-						</div>
-						<div class="box">
-							<img src="images/7.jpg" alt="">
-							<h4>挑战杯海报</h4>
-							<p><span>简介：</span>全面介绍挑战杯的来历，历届信息等内容</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="awardsContent" class="content">
-				<h1>Awards</h1>
-			</div>
-			<div id="messageContent" class="content">
-				<h1>Message</h1>
-			</div>
-			<div class="content">
-				<h1>footer</h1>
-			</div>
+		<div id="totop">
+			<a href="">^</a>
 		</div>
 	</div>
-	<script type="text/javascript" src="javascripts/jquery.min.js"></script>
-	<script type="text/javascript" src="javascripts/javascript.js"></script>
+	<div id="pic-box">
+		<img id="box-img" src="" alt="图片加载失败，请返回重试" qua="0">
+		<a href="" id="exit">X</a>
+		<a href="" id="pre"><</a>
+		<a href="" id="next">></a>
+	</div>
+	<script type="text/javascript" src="javascript/ready.js"></script>
+	<script type="text/javascript" src="javascript/javascript.js"></script>
+	<script type="text/javascript" src="javascript/totop.js"></script>
+	<script type="text/javascript" src="javascript/Http.js"></script>
+	<script type="text/javascript" src="javascript/load.js"></script>
+	<script type="text/javascript" src="javascript/hash.js"></script>
 </body>
 </html>
